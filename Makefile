@@ -6,7 +6,7 @@
 #    By: jidrizi <jidrizi@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/07 13:36:32 by jidrizi           #+#    #+#              #
-#    Updated: 2024/03/08 11:34:04 by jidrizi          ###   ########.fr        #
+#    Updated: 2024/03/13 14:20:43 by jidrizi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ CC = cc
 CFLAGS = -Wall -Werror -Wextra -std=c99
 
 SRC = ft_toupper.c ft_tolower.c ft_strlen.c ft_memset.c ft_isprint.c ft_isdigit.c ft_isascii.c\
-	  ft_isalpha.c ft_isalnum.c ft_bzero.c ft_memcpy.c ft_memmove.c 
+	  ft_isalpha.c ft_isalnum.c ft_bzero.c ft_memcpy.c ft_memmove.c ft_strlcpy.c ft_strlcat.c\
 
 
 OBJS = $(SRC:.c=.o)
