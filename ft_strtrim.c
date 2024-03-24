@@ -1,27 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jidrizi <jidrizi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/20 19:50:37 by jidrizi           #+#    #+#             */
-/*   Updated: 2024/03/20 20:14:29 by jidrizi          ###   ########.fr       */
+/*   Created: 2024/03/20 20:15:04 by jidrizi           #+#    #+#             */
+/*   Updated: 2024/03/23 15:42:01 by jidrizi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	int		x;
-	char	*fun;
+	size_t	length;
 
-	x = ft_strlen(s1) + ft_strlen(s2) + 1;
-	fun = malloc(x * sizeof(char));
-	if (!fun)
-		return (0);
-	ft_strlcpy(fun, s1, x);
-	ft_strlcat(fun, s2, x);
-	return (fun);
+	while (*s1 && ft_strchr(set, *s1))
+		s1++;
+	length = ft_strlen(s1);
+	while (length > 0 && ft_strchr(set, s1[length - 1]))
+		length--;
+	return (ft_substr(s1, 0, length));
 }
