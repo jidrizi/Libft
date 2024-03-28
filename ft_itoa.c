@@ -6,13 +6,13 @@
 /*   By: jidrizi <jidrizi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/23 15:49:09 by jidrizi           #+#    #+#             */
-/*   Updated: 2024/03/24 11:49:50 by jidrizi          ###   ########.fr       */
+/*   Updated: 2024/03/28 18:16:51 by jidrizi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	size(long long x)
+static int	size(long long x)
 {
 	int	digits;
 

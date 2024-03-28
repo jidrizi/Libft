@@ -6,7 +6,7 @@
 /*   By: jidrizi <jidrizi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/15 17:03:26 by jidrizi           #+#    #+#             */
-/*   Updated: 2024/03/18 16:05:50 by jidrizi          ###   ########.fr       */
+/*   Updated: 2024/03/28 18:03:45 by jidrizi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*substr;
 
 	oglen = ft_strlen(s);
-	if (start >= oglen)
+	if (start > oglen)
 	{
 		return (ft_strdup(""));
 	}
