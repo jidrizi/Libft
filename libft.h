@@ -6,7 +6,7 @@
 /*   By: jidrizi <jidrizi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 14:09:02 by jidrizi           #+#    #+#             */
-/*   Updated: 2024/06/11 19:06:22 by jidrizi          ###   ########.fr       */
+/*   Updated: 2024/06/11 20:44:22 by jidrizi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <string.h>
 # include <unistd.h>
 # include "ft_printf.h"
+# include "get_next_line_bonus.h"
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
