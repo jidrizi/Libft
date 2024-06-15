@@ -6,7 +6,7 @@
 /*   By: jidrizi <jidrizi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/20 19:50:37 by jidrizi           #+#    #+#             */
-/*   Updated: 2024/03/20 20:14:29 by jidrizi          ###   ########.fr       */
+/*   Updated: 2024/06/15 15:39:37 by jidrizi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,10 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		x;
 	char	*fun;
 
+	if (!s1)
+		return (ft_strdup(s2));
+	if (!s2)
+		return (ft_strdup(s1));
 	x = ft_strlen(s1) + ft_strlen(s2) + 1;
 	fun = malloc(x * sizeof(char));
 	if (!fun)
