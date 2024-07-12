@@ -6,7 +6,7 @@
 /*   By: jidrizi <jidrizi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 14:09:02 by jidrizi           #+#    #+#             */
-/*   Updated: 2024/06/11 20:44:22 by jidrizi          ###   ########.fr       */
+/*   Updated: 2024/07/12 19:16:32 by jidrizi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,4 +54,5 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 char	**ft_split(char const *s, char c);
+void	ft_free_and_null(void **ptr);
 #endif
