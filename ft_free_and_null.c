@@ -6,11 +6,11 @@
 /*   By: jidrizi <jidrizi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/12 18:07:32 by jidrizi           #+#    #+#             */
-/*   Updated: 2024/07/12 18:24:37 by jidrizi          ###   ########.fr       */
+/*   Updated: 2024/07/14 16:29:51 by jidrizi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "libft.h"
+#include "libft.h"
 
 void	ft_free_and_null(void **ptr)
 {
