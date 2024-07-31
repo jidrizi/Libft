@@ -6,7 +6,7 @@
 #    By: jidrizi <jidrizi@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/07 13:36:32 by jidrizi           #+#    #+#              #
-#    Updated: 2024/07/14 14:54:22 by jidrizi          ###   ########.fr        #
+#    Updated: 2024/07/31 12:24:14 by jidrizi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ SRC	=	ft_toupper.c ft_tolower.c ft_strlen.c ft_memset.c ft_isprint.c\
 		hexshii.c get_next_line_bonus.c get_next_line_utils_bonus.c\
 		ft_free_and_null.c
 
-OBJS = $(SRC:.c=.o)
+OBJS = $(SRC:%.c=%.o)
 
 NAME = libft.a
 
